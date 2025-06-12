@@ -66,8 +66,12 @@ window.addEventListener("load", () => {
   const mainSwiperContainer = document.querySelector(".img-slide .slide-list");
   if (mainSwiperContainer) {
     // 제어할 요소들을 미리 찾아둡니다.
-    const currentNumEl = mainSwiperContainer.querySelector(".button-number .current");
-    const totalNumEl = mainSwiperContainer.querySelector(".button-number .total");
+    const currentNumEl = mainSwiperContainer.querySelector(
+      ".button-number .current"
+    );
+    const totalNumEl = mainSwiperContainer.querySelector(
+      ".button-number .total"
+    );
     const playStopBtn = mainSwiperContainer.querySelector(".stop-start .start");
 
     const mainSwiper = new Swiper(mainSwiperContainer, {
@@ -123,8 +127,8 @@ window.addEventListener("load", () => {
     spaceBetween: 33, // 카드 간 간격
     breakpoints: {
       1219: {
-        slidesPerView: 4, // 한 화면에 보이는 카드 수
-        spaceBetween: 16, // 카드 간 간격
+        slidesPerView: 3, // 한 화면에 보이는 카드 수
+        spaceBetween: 33, // 카드 간 간격
       },
     },
     pagination: {
@@ -144,16 +148,10 @@ window.addEventListener("load", () => {
       chattingBox.classList.add("hide");
     });
   }
-  const noteSwiper = new Swiper(".notebook .slide-list", {
-    slidesPerView: 4, // 한 화면에 보이는 카드 수
-    spaceBetween: 33, // 카드 간 간격
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".notebook .swiper-button-next",
-      prevEl: ".notebook .swiper-button-prev",
-    },
+  const modal = document.querySelector("#modal");
+  const modalBtn = document.querySelector(".modal-btn");
+  modal.classList.add("active");
+  modalBtn.addEventListener("click", () => {
+    modal.classList.remove("active");
   });
 });
