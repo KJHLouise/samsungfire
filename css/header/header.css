@@ -1,0 +1,336 @@
+.header {
+  position: relative;
+}
+.header-top {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.top-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.top-menu .text1 {
+  display: flex;
+  gap: 0 1.2rem;
+}
+.top-menu .text1 a:first-child {
+  color: #0b0d0f;
+}
+.top-menu .text1 a:last-child {
+  color: #0068ff;
+  position: relative;
+  padding-left: 1.2rem;
+  padding-right: 1.4rem;
+}
+.top-menu .text1 a:last-child::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 1em;
+  background: #e5e5e5;
+}
+.top-menu .text2 {
+  position: relative;
+  display: flex;
+  gap: 1.6rem;
+  color: #868a93;
+}
+.top-menu .text2 a:first-child {
+  position: relative;
+  padding-left: 1.4rem;
+}
+.top-menu .text2 a:first-child::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 1em;
+  background: #e5e5e5;
+}
+.top-login {
+  display: flex;
+  align-items: stretch;
+  height: 2.8rem;
+  background-color: #fff;
+  border: 1px solid #e5e5e8;
+  border-radius: 8px;
+}
+.top-login a {
+  line-height: 2.8rem;
+}
+.top-login a:first-child {
+  position: relative;
+  padding: 0 10px;
+}
+.top-login a:last-child {
+  position: relative;
+  padding: 0 10px;
+}
+.top-login a:last-child::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #e5e5e5;
+}
+.top-login a span {
+  color: #5a5b63;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+.header-btm {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 8.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-btm .inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.header-btm.is-fixed1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 990;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.header-btm .inner.is-fixed3 {
+  position: relative;
+  width: 1180px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 1rem;
+}
+.logo a {
+  width: 9rem;
+  height: 2.6rem;
+}
+.logo a img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.menu-btm {
+  position: relative;
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.menubg {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: auto;
+  background: #fff;
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  z-index: 90;
+  opacity: 0;
+}
+.header.active .menubg {
+  opacity: 1;
+  transition: opacity 0.2s ease-out, height 0s;
+}
+.menu-btm .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 3.2rem;
+  height: 100%;
+}
+.menu-btm .nav > li {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  height: 100%;
+}
+.menu-btm .nav > li > a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+}
+.menu-btm .nav > li > a > strong {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.8rem;
+  height: 100%;
+  font-size: 2rem;
+  line-height: 2.1rem;
+  white-space: nowrap;
+}
+.menu-btm .nav > li > a > strong::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.3rem;
+  left: 50%;
+  bottom: 0;
+  background-color: #0b0d0f;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  transition: transform 0.15s cubic-bezier(0.4, 0, 0.7, 0);
+}
+.menu-btm .nav > li:hover > a > strong::after {
+  transform: translateX(-50%) scaleX(1);
+}
+.menu-btm .nav > li > .submenu {
+  position: absolute;
+  top: 8.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 122.8rem;
+  padding: 30px 24px;
+  box-sizing: border-box;
+  z-index: 100;
+  display: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-out 0.1s, visibility 0s 0.3s;
+}
+.menu-btm.active .nav > li.on > .submenu {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.2s ease-out 0.1s, visibility 0s 0s;
+}
+.menu-btm .nav > li > .submenu > li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 1 auto;
+  min-width: 140px;
+  gap: 0.6rem;
+}
+.menu-btm .nav > li > .submenu > li > a {
+  position: relative;
+  width: 100%;
+  padding: 0 1.4rem 0.5rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  color: #0b0d0f;
+  line-height: 2.4rem;
+}
+.menu-btm .nav > li > .submenu > li > a > span {
+  position: relative;
+  font-weight: 700;
+}
+.menu-btm .nav > li > .submenu > li > div {
+  position: relative;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0.4rem;
+  margin-bottom: 2rem;
+}
+.menu-btm .nav > li > .submenu > li > div > a {
+  position: relative;
+  padding: 0.1rem 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #5a5b63;
+  line-height: 2.2rem;
+  white-space: normal;
+}
+.menu-btm .nav > li > .submenu > li > div > a > span {
+  position: relative;
+  font-weight: 700;
+}
+.login-btm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+.login-btm a {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+.login-btm a img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1219px) {
+  .header {
+    height: 5.4rem;
+  }
+  .header-top,
+  .menu-btm,
+  .login-btm a:first-child {
+    display: none;
+  }
+  .header-btm {
+    position: fixed;
+    height: 5.4rem;
+  }
+  .header-btm .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo a {
+    width: 8.2rem;
+    height: 2.4rem;
+  }
+  .login-btm {
+    position: relative;
+    right: 4.6rem;
+  }
+  .header-btm.is-fixed1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 990;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  .header-btm .inner.is-fixed3 {
+    position: relative;
+    width: 1180px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

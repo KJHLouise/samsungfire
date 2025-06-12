@@ -1,0 +1,320 @@
+.footer {
+  position: relative;
+  margin-top: 8rem;
+}
+.footer-top {
+  display: block;
+  background-color: #fff;
+  border-top: 0.1rem solid #e5e5e8;
+}
+.footer-top .inner {
+  position: relative;
+  max-width: 122.8rem;
+  margin: auto;
+  padding: 0 2.4rem;
+}
+.footer-top .inner .foot-aside-list {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+  height: 5.5rem;
+  border-left: 0.1rem solid #e5e5e8;
+}
+.footer-top .inner .foot-aside-list > li {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  border-right: 0.1rem solid #e5e5e8;
+}
+.footer-top .inner .foot-aside-list > li > a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0 3.2rem 0 1.6rem;
+  line-height: 2.1rem;
+}
+.footer-top .inner .foot-aside-list > li > a > span {
+  font-size: 1.6rem;
+}
+.footer-top .inner .foot-aside-list > li > a > span::after {
+  content: "";
+  width: 1.4rem;
+  height: 1.4rem;
+  background-image: url(../../img/ico-common-fold-arr.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 1.6rem;
+  margin-top: -0.7rem;
+}
+.footer-top .inner .foot-aside-list > li .link-list {
+  display: none;
+  position: absolute;
+  width: auto;
+  height: 29.4rem;
+  left: -0.1rem;
+  right: -0.1rem;
+  bottom: 5.6rem;
+  background-color: #fff;
+  border: 0.1rem solid #e5e5e8;
+  border-bottom: 0;
+  z-index: 5;
+}
+.footer-top .inner .foot-aside-list:hover > li .link-list {
+  display: block;
+}
+.footer-top .inner .foot-aside-list > li .link-list ul {
+  padding: 3rem 2.4rem;
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+.footer-top .inner .foot-aside-list > li .link-list ul > li > a {
+  display: inline-block;
+  font-size: 1.4rem;
+  color: #5a5b63;
+  line-height: 2.6rem;
+}
+.footer-top .inner .foot-aside-list > li .link-list ul > li:hover a {
+  text-decoration: underline;
+}
+.footer-top .inner .foot-aside-list > li .link-list ul > li > a > span {
+  font-size: 1.3rem;
+  font-weight: inherit;
+}
+.footer-btm {
+  background-color: #f7f8f9;
+  position: relative;
+}
+.footer-btm .inner {
+  padding: 2rem 2.4rem 6rem;
+  position: relative;
+  max-width: 122.8rem;
+  margin: auto;
+}
+/* 푸터 모바일 SNS 영역 */
+.sns-wrap-mb {
+  display: none;
+}
+/* 푸터 모바일 정책 영역 */
+.policy-wrap-mp {
+  display: none;
+}
+.footer-btm .inner .text-wrap {
+  margin-bottom: 2rem;
+}
+.footer-btm .inner .text-wrap .footer-btm-menu {
+  justify-content: flex-start;
+  gap: 0 4.1rem;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.footer-btm .inner .text-wrap .footer-btm-menu .item {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+.footer-btm .inner .text-wrap .footer-btm-menu .item:first-child::before {
+  display: none;
+}
+.footer-btm .inner .text-wrap .footer-btm-menu .item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0.1rem;
+  height: 1.4rem;
+  top: 50%;
+  left: -2.1rem;
+  background-color: #e5e5e8;
+  transform: translateY(-50%);
+}
+.footer-btm .inner .text-wrap .footer-btm-menu .item a {
+  color: #5a5b63;
+  flex: 0 0 auto;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+.footer-btm .inner .text-wrap .footer-btm-menu .item a span {
+  font-size: inherit;
+  font-weight: inherit;
+}
+.footer-btm .inner .text-info-area {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  border-top-color: #e9e9ef;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 0.1rem solid #e5e5e8;
+}
+.footer-btm .inner .text-info-area .foot-info-call {
+  order: 1;
+  margin-bottom: 0;
+  text-align: center;
+}
+.footer-btm .inner .text-info-area .foot-info-call a {
+  display: flex;
+  gap: 0 0.4rem;
+  border-radius: 3rem;
+  background-color: #fff;
+  border-color: #e5e5e8;
+  color: #0068ff;
+  min-height: 3.2rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  min-width: 5rem;
+}
+.footer-btm .inner .text-info-area .foot-info-call a::before {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../../img/ico-footer-tell.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex: 0 0 auto;
+}
+.footer-btm .inner .text-info-area .foot-info-call a span {
+  font-weight: 700;
+  text-align: left;
+}
+.footer-btm .inner .text-info-area .text-info {
+  order: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.4rem;
+  color: #5a5b63;
+  line-height: 2rem;
+}
+.footer-btm .inner .text-info-area .text-info ul {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 0 2.1rem;
+}
+.footer-btm .inner .text-info-area .text-info ul li {
+  position: relative;
+  text-align: left;
+}
+.footer-btm .inner .text-info-area .text-info ul li:first-child::after {
+  display: none;
+}
+.footer-btm .inner .text-info-area .text-info ul li::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0.1rem;
+  height: 1.2rem;
+  top: 50%;
+  left: -1.1rem;
+  background-color: #e5e5e8;
+  transform: translateY(-50%);
+}
+.footer-btm .inner .text-info-area .copyright {
+  text-align: initial;
+  margin-top: 0;
+  display: flex;
+}
+.footer-btm .inner .text-info-area .mb-only {
+  display: none;
+}
+.footer-btm .inner .logowrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.footer-btm .inner .logowrap .foot-logo {
+  background-image: url(../../img/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex: 0 0 auto;
+  width: 8.8rem;
+  height: 3rem;
+}
+.footer-btm .inner .logowrap .foot-mark {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.footer-btm .inner .logowrap .foot-mark > li {
+  flex: 0 0 auto;
+}
+.footer-btm .inner .logowrap .foot-mark > li > a {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.footer-btm .inner .logowrap .foot-mark .mark1 > a {
+  width: 3.7rem;
+  height: 2.4rem;
+  background-image: url(../../img/footer-mark1.png);
+}
+.footer-btm .inner .logowrap .foot-mark .mark2 > a {
+  width: 3.7rem;
+  height: 2.4rem;
+  background-image: url(../../img/footer-mark2.png);
+}
+.footer-btm .inner .logowrap .foot-mark .mark3 > a {
+  width: 3.7rem;
+  height: 2.4rem;
+  background-image: url(../../img/footer-mark3.png);
+}
+.chatting {
+  position: fixed;
+  right: auto;
+  left: 50%;
+  margin-left: 61rem;
+  bottom: 5.2rem;
+  transition: bottom 0.15s 0.3s cubic-bezier(0.4, 0, 0.7, 1);
+}
+.chatting.hide {
+  display: none;
+}
+.chatting a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  height: 4rem;
+  padding: 1rem 1.4rem;
+  background-color: #0d0b0f;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 0.1rem 0.6rem 0;
+  border-radius: 2.4rem;
+}
+.chatting a span {
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  letter-spacing: -0.03rem;
+}
+.chatting .button {
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../../img/btn-close-small.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  top: -1.9rem;
+  right: -0.2rem;
+  cursor: pointer;
+}
+.chatting .button span {
+  display: none;
+}
+@media (max-width: 1219px) {
+}

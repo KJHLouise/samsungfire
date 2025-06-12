@@ -1,0 +1,92 @@
+.header {
+  position: relative;
+}
+.header-top {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.top-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.top-menu .text1 {
+  display: flex;
+  gap: 0 1.2rem;
+}
+.top-menu .text1 a:first-child {
+  color: #0b0d0f;
+}
+.top-menu .text1 a:last-child {
+  color: #0068ff;
+  position: relative;
+  padding-left: 1.2rem;
+  padding-right: 1.4rem;
+}
+.top-menu .text1 a:last-child::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 1em;
+  background: #e5e5e5;
+}
+.top-menu .text2 {
+  position: relative;
+  display: flex;
+  gap: 1.6rem;
+  color: #868a93;
+}
+.top-menu .text2 a:first-child {
+  position: relative;
+  padding-left: 1.4rem;
+}
+.top-menu .text2 a:first-child::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 1em;
+  background: #e5e5e5;
+}
+.top-login {
+  display: flex;
+  align-items: stretch;
+  height: 2.8rem;
+  background-color: #fff;
+  border: 1px solid #e5e5e8;
+  border-radius: 8px;
+}
+.top-login a {
+  line-height: 2.8rem;
+}
+.top-login a:first-child {
+  position: relative;
+  padding: 0 10px;
+}
+.top-login a:last-child {
+  position: relative;
+  padding: 0 10px;
+}
+.top-login a:last-child::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #e5e5e5;
+}
+.top-login a span {
+  color: #5a5b63;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
