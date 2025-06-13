@@ -1025,7 +1025,6 @@
     padding: 1.4rem 2.4rem;
     min-height: 5.6rem;
   }
-
   .login-wrap-mb .hello-wrap .hello {
     display: flex;
     justify-content: flex-start;
@@ -1213,7 +1212,97 @@
   }
   .menu-slide .slide-list .swiper-wrapper .swiper-slide a .text-wrap .img {
     width: 14rem;
-    height: 14rem;
     margin-left: auto;
+  }
+  .side-banner-wrap-mb {
+    position: relative;
+    margin-top: 4rem;
+    padding: 0 2rem;
+  }
+  .side-banner-wrap-mb .main-side {
+    height: 100%;
+  }
+  .side-banner-wrap-mb .main-side-1 {
+    margin-top: 1.6rem;
+  }
+  .side-banner-wrap-mb .main-side .side-banner {
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+  .side-banner-wrap-mb .main-side .side-banner .button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    width: 100%;
+    min-height: 14rem;
+    padding: 3.1rem 2.4rem 3.2rem 2.4rem;
+  }
+  .side-banner-wrap-mb .main-side .side-banner .button::after {
+    content: "";
+    width: 14rem;
+    height: 14rem;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .side-banner-wrap-mb .main-side .side-banner .btn1 {
+    background-color: #edf4ff;
+  }
+  .side-banner-wrap-mb .main-side .side-banner .btn2 {
+    background-color: #def9fe;
+  }
+  .side-banner-wrap-mb .main-side .side-banner .btn3 {
+    background-color: #fff6de;
+  }
+  .side-banner-wrap-mb .main-side .side-banner .button .text-box {
+    position: relative;
+  }
+  .side-banner-wrap-mb .main-side .side-banner .button .text-box h5 {
+    display: block;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+  }
+  .side-banner-wrap-mb .main-side .side-banner .button .text-box span {
+    display: block;
+    margin-top: 0.8rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #727780;
+  }
+  .side-banner-wrap-mb .main-side .side-banner .btn1::after {
+    background-image: url(../../img/side_banner_1.png);
+  }
+  .side-banner-wrap-mb .main-side .side-banner .btn2::after {
+    background-image: url(../../img/side_banner_2.png);
+  }
+  .side-banner-wrap-mb .main-side .side-banner .btn3::after {
+    background-image: url(../../img/btm_banner_img_1.png);
+  }
+  .tabmenu {
+    margin-top: 4rem;
+    padding: 0 2rem;
+  }
+  .tabmenu .notice {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+  .notice > a {
+    position: absolute;
+    top: 0.2rem;
+    right: 0;
+    gap: 0 0.4rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .tabmenu .notice > a > span {
+    line-height: 2.4rem;
+  }
+  .tabmenu .notice > a > span::after {
   }
 }

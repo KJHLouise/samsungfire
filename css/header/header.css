@@ -272,6 +272,11 @@
   line-height: 2.2rem;
   white-space: normal;
 }
+.menu-btm .nav > li > .submenu > li > div > a:hover {
+  color: #0b0d0f;
+  background-color: #edf4ff;
+  border-radius: 0.8rem;
+}
 .menu-btm .nav > li > .submenu > li > div > a > span {
   position: relative;
   font-weight: 700;
