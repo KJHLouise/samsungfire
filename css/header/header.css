@@ -207,77 +207,80 @@
 .menu-btm .nav > li:hover > a > strong::after {
   transform: translateX(-50%) scaleX(1);
 }
-.menu-btm .nav > li > .submenu {
+.menu-btm .nav > li > div > .submenu {
   position: absolute;
-  top: 8.3rem;
+  width: 117.6rem;
+  top: 8.2rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
-  max-width: 122.8rem;
-  padding: 30px 24px;
+  z-index: 10;
+}
+.menu-btm .nav > li > div > .submenu {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding-top: 3rem;
   box-sizing: border-box;
   z-index: 100;
   display: none;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 5rem;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.2s ease-out 0.1s, visibility 0s 0.3s;
 }
-.menu-btm.active .nav > li.on > .submenu {
+.menu-btm.active .nav > li.on > div > .submenu {
   display: flex;
   opacity: 1;
   visibility: visible;
   transition: opacity 0.2s ease-out 0.1s, visibility 0s 0s;
 }
-.menu-btm .nav > li > .submenu > li {
+.menu-btm .nav > li > div > .submenu > li {
   display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex: 0 0 23.5rem;
   flex-direction: column;
-  align-items: flex-start;
-  flex: 1 1 auto;
-  min-width: 140px;
-  gap: 0.6rem;
 }
-.menu-btm .nav > li > .submenu > li > a {
+.menu-btm .nav > li > div > .submenu > li > a {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
   padding: 0 1.4rem 0.5rem;
   font-size: 1.6rem;
-  font-weight: bold;
-  margin-bottom: 0.8rem;
+  font-weight: 700;
+  /* margin-bottom: 0.8rem; */
   color: #0b0d0f;
   line-height: 2.4rem;
 }
-.menu-btm .nav > li > .submenu > li > a > span {
+.menu-btm .nav > li > div > .submenu > li > a > span {
   position: relative;
   font-weight: 700;
 }
-.menu-btm .nav > li > .submenu > li > div {
+.menu-btm .nav > li > div > .submenu > li > div {
   position: relative;
   width: auto;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 0.4rem;
   margin-bottom: 2rem;
 }
-.menu-btm .nav > li > .submenu > li > div > a {
+.menu-btm .nav > li > div > .submenu > li > div > a {
   position: relative;
-  padding: 0.1rem 0;
+  width: 100%;
+  padding: 0.1rem 1.4rem 0.2rem;
   font-size: 1.4rem;
   font-weight: 700;
   color: #5a5b63;
-  line-height: 2.2rem;
-  white-space: normal;
+  line-height: 2.4rem;
 }
-.menu-btm .nav > li > .submenu > li > div > a:hover {
+.menu-btm .nav > li > div > .submenu > li > div > a:hover {
   color: #0b0d0f;
   background-color: #edf4ff;
   border-radius: 0.8rem;
 }
-.menu-btm .nav > li > .submenu > li > div > a > span {
+.menu-btm .nav > li > div > .submenu > li > div > a > span {
   position: relative;
   font-weight: 700;
 }

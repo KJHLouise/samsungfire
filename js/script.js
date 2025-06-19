@@ -66,12 +66,8 @@ window.addEventListener("load", () => {
   const mainSwiperContainer = document.querySelector(".img-slide .slide-list");
   if (mainSwiperContainer) {
     // 제어할 요소들을 미리 찾아둡니다.
-    const currentNumEl = mainSwiperContainer.querySelector(
-      ".button-number .current"
-    );
-    const totalNumEl = mainSwiperContainer.querySelector(
-      ".button-number .total"
-    );
+    const currentNumEl = mainSwiperContainer.querySelector(".button-number .current");
+    const totalNumEl = mainSwiperContainer.querySelector(".button-number .total");
     const playStopBtn = mainSwiperContainer.querySelector(".stop-start .start");
 
     const mainSwiper = new Swiper(mainSwiperContainer, {
